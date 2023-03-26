@@ -1,0 +1,17 @@
+[package]
+name = "ProductivityDNS"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.69"
+rocket = "0.5.0-rc.2"
+serde_yaml = "0.9.19"
+simple-dns-server = "0.1.0"
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+
+tracing-subscriber = "0.3.16"
+reqwest = "0.11.13"
+async-mutex = "1.4.0"
